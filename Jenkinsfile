@@ -8,8 +8,5 @@ pipeline {
                 sh 'node --version'
             }
         }
-        stage('Hello via Alpine') {
-                        sh 'echo Hello DQS Readers - from inside an alpine container!'
-        }
     }
 }
