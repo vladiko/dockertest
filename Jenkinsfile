@@ -1,12 +1,12 @@
 pipeline {
     agent {
-        docker { image 'alpine:latest' }
+        docker { image 'node:7-alpine' }
     }
     stages {
-           stage('Hello via Alpine') {
-      docker.image('alpine:latest').inside {
-         sh 'echo Hello DQS Readers - from inside an alpine container!'
-      }
-   }
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
     }
 }
