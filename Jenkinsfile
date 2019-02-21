@@ -1,6 +1,6 @@
 node {
    stage('Hello via Alpine') {
-      docker.image('alpine:latest').withRun() {
+      docker.image('alpine:latest').inside() {
          sh 'sleep 120'
       }
    }
