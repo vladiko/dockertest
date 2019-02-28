@@ -6,7 +6,7 @@ MyFirstTest
 EmptyCheckTest
    Set Test Variable   ${a}   ${EMPTY}
    Set Test Variable   ${b}   v
-   Should Be Empty     ${b}
+   Should Be Empty     ${a}
  
    
 ListFuncTest
