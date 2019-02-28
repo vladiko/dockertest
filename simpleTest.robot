@@ -11,6 +11,7 @@ EmptyCheckTest
    
 ListFuncTest
      @{list}=     Create List    a    b    c
+     Should be 10
     
    
     
